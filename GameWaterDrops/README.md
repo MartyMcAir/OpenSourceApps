@@ -1,5 +1,4 @@
 # Game Water Drops
-###### My Experimental Web App and code trash (source: alishev)
 ###### origin: https://geekbrains.ru/chapters/1539 - курс Java быстрый старт
 
 ###### author: https://www.youtube.com/c/biblelamp/playlists - Сергей Ирюпин
