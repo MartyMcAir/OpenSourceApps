@@ -3,8 +3,6 @@
 
 ###### author: https://www.youtube.com/c/biblelamp/playlists - Сергей Ирюпин
 
-###### https://www.youtube.com/playlist?list=PLAma_mKffTOR5o0WNHnY0mTjKxnCgSXrZ
-
 ## Information about the system and editors used:
 
 - utf 8 encoding
