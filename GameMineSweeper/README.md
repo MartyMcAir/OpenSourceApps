@@ -15,26 +15,26 @@
 - JDK 11 
 
 
-### Main Window Game
+### Main Window Game (from lesson n22)
 
-![](https://github.com/MartyMcAir/OpenSourceApps/blob/master/GameWaterDrops/src/main/source/img/MainWindow.png)
+![](https://github.com/MartyMcAir/OpenSourceApps/blob/master/GameMineSweeper/res/imgInfo/lesson22.png)
 
 ### Win Window Game
 
-![](https://github.com/MartyMcAir/OpenSourceApps/blob/master/GameWaterDrops/src/main/source/img/MainWindow.png)
+![](https://github.com/MartyMcAir/OpenSourceApps/blob/master/GameMineSweeper/res/imgInfo/gameWin.png)
 
 ### Loose Window Game
 
-![](https://github.com/MartyMcAir/OpenSourceApps/blob/master/GameWaterDrops/src/main/source/img/MainWindow.png)
+![](https://github.com/MartyMcAir/OpenSourceApps/blob/master/GameMineSweeper/res/imgInfo/gameLoose.png)
 
 ### UML
 
-![](https://github.com/MartyMcAir/OpenSourceApps/blob/master/GameWaterDrops/src/main/source/img/MainWindow.png)
+![](https://github.com/MartyMcAir/OpenSourceApps/blob/master/GameMineSweeper/res/imgInfo/gameUML_scheme.png)
 
 ### Game Structure
 
-![](https://github.com/MartyMcAir/OpenSourceApps/blob/master/GameWaterDrops/src/main/source/img/MainWindow.png)
+![](https://github.com/MartyMcAir/OpenSourceApps/blob/master/GameMineSweeper/res/imgInfo/gameStructure.png)
 
 ### Game Algorithm
 
-![](https://github.com/MartyMcAir/OpenSourceApps/blob/master/GameWaterDrops/src/main/source/img/MainWindow.png)
+![](https://github.com/MartyMcAir/OpenSourceApps/blob/master/GameMineSweeper/res/imgInfo/lesson43_mineAlgo.png)
