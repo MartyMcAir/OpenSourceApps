@@ -47,7 +47,7 @@ public class JavaSweeper extends JFrame {
                 super.paintComponent(g);
                 for (Coordinate coordinate : Ranges.getAllCoordinates()) {
 //                    g.drawImage(Box.FLAGGED.image, coordinate.x * IMAGE_SIZE, coordinate.y * IMAGE_SIZE, this);
-                    // берем Image, из доступных values по индексу в массиве, а остоок отделения на кол-во ээлементов
+                    // берем Image, из доступных values по индексу в массиве, а остаток отделения на кол-во элементов
                     // необходим что бы, не выходило за границы массива
 //                    g.drawImage(Box.values()[(coordinate.x + coordinate.y) % Box.values().length].image,
 //                            coordinate.x * IMAGE_SIZE, coordinate.y * IMAGE_SIZE, this);
@@ -119,7 +119,7 @@ public class JavaSweeper extends JFrame {
 
     private Image getImage(String name) {
         String fileName = "img/" + name + ".png";   // загрузка картинок с ресурса
-        // исщет в папке, что помечена как ресурсы..
+        // ищет в папке, что помечена как ресурсы..
         ImageIcon icon = new ImageIcon(getClass().getResource(fileName));
         return icon.getImage();
     }

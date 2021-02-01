@@ -1,7 +1,7 @@
 package sweeper;
 
 class Flag {
-    private Matrix flagMap; // хранит значения клетки (верзний слой значения флагов _ а низ бомбы)
+    private Matrix flagMap; // хранит значения клетки (верхний слой значения флагов _ а низ бомбы)
     int totalFlags; // кол-во флагов, будет уменьшаться при открытии флагов
     int totalClosedBoxes; // при открытии любой клетки, этот счетчик уменьшается
 
@@ -24,7 +24,7 @@ class Flag {
         return flagMap.getBox(coordinate);
     }
 
-    // открыть клетку с координатами.. (естестно клетка, при этом должна быть закрытой)
+    // открыть клетку с координатами.. (естественно клетка, при этом должна быть закрытой)
     void setOpenedToBox(Coordinate coordinate) {
         totalClosedBoxes--;
         flagMap.setBox(coordinate, Box.OPENED);
@@ -93,7 +93,7 @@ class Flag {
 
     public void setFlaggedToLastClosedBoxes() {
         for (Coordinate coordinate : Ranges.getAllCoordinates()) {
-            // если по окончанию игры есть координаты клетки в котоой, клетка закрыта
+            // если по окончанию игры есть координаты клетки в которой, клетка закрыта
             if (Box.CLOSED == flagMap.getBox(coordinate)) {
                 setFlaggedToBox(coordinate); // то ставим на нее флаг
             }

@@ -109,9 +109,9 @@ public class GameWindow extends JFrame {
 
     private static void countFrameOnTheSeconds() {
         frameCounter++;
-        // еси со времени запуска прошля 1 сек.
+        // еси со времени запуска прошла 1 сек.
         if (System.currentTimeMillis() >= (executeTime + 1000)) {
-            executeTime = System.currentTimeMillis(); // времени запуска ставим тек время, и так дослед секунды
+            executeTime = System.currentTimeMillis(); // времени запуска ставим тек время, и так до след секунды
             System.out.println("количество кадров за 1 сек: " + frameCounter);
             frameCounter = 0;   // обнуляем счетчик
         }

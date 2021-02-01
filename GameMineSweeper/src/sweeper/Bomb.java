@@ -32,7 +32,7 @@ class Bomb {
     }
 
     // проверка на максимал кол-во бомб _ половина от площади поля
-    // допустимое кол-во бомб в соотвветствии с размером поля _ т.е. не больше чем самих клеток в игре
+    // допустимое кол-во бомб в соответствии с размером поля _ т.е. не больше чем самих клеток в игре
     void fixBombsCount() {
         int maxBombs = Ranges.getSize().x * Ranges.getSize().y / 2;
         if (totalBombs > maxBombs)
@@ -42,8 +42,8 @@ class Bomb {
     // размещение бомб в определенные клетки (в рандомные координаты)
     private void placeBombs() {
         // https://www.udemy.com/course/javasweeper/learn/lecture/11039888#overview lesson33
-        // бессконечный цикл, для рандомного размещения бомб
-        while (true) { // бессконечный, дабы разместить во все возможные места
+        // бесконечный цикл, для рандомного размещения бомб
+        while (true) { // бесконечный, дабы разместить во все возможные места
             // _ так при поле 9 на 9=81 клетка, и поставив 81 бомбу, все клетки должны быть заполнены
             Coordinate randomCoordinate = Ranges.getRandomCoordinate();
             if (Box.BOMB == bombMap.getBox(randomCoordinate))
@@ -57,9 +57,9 @@ class Bomb {
 
     private void incNumbersAroundBomb(Coordinate randomCoordinate) {
         for (Coordinate around : Ranges.getCoordinatesAround(randomCoordinate)) {
-//            bombMap.setBox(around, Box.NUM1); // ставим еденицы вокруг каждой бомбы
+//            bombMap.setBox(around, Box.NUM1); // ставим единицы вокруг каждой бомбы
             // цифра в игре сообщает об кол-ве бомб вокруг данной клетки
-            // проверям что бы при переборе на след. элемент, если это бомба то её не затирало
+            // проверим что бы при переборе на след. элемент, если это бомба то её не затирало
             if (Box.BOMB != bombMap.getBox(around))
                 bombMap.setBox(around, bombMap.getBox(around).nextNumberBox()); // ставим еденицы вокруг каждой бомбы
         }

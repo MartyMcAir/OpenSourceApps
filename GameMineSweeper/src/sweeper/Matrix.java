@@ -10,7 +10,7 @@ public class Matrix {
     }
 
     public Box getBox(Coordinate coordinate) {
-        // если координата в перделах поля, т.е. не выходит за ее границы
+        // если координата в пределах поля, т.е. не выходит за ее границы
         if (Ranges.inRange(coordinate))
             return matrix[coordinate.x][coordinate.y];
         return null;

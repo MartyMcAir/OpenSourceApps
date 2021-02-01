@@ -3,7 +3,7 @@ package sweeper;
 public class Game {
     //    private Bomb bomb; // нижний уровень с бомбами
 //    private Flag flag; // верхний уровень с флагами
-//    private GameState gameState; // состояние игры, выйграл проиграл.. процесс игры
+//    private GameState gameState; // состояние игры, выиграл проиграл.. процесс игры
 //    private Matrix bombMap;
     private Bomb bomb;
     private Flag flag;
@@ -23,7 +23,7 @@ public class Game {
 //        bombMap.setBox(new Coordinate(0, 1), Box.NUM1);
 //        bombMap.setBox(new Coordinate(1, 0), Box.NUM2);
 //        bombMap.setBox(new Coordinate(1, 1), Box.NUM3);
-        bomb.start(); // всё что выше перенесенно в класс Bomb
+        bomb.start(); // всё что выше перенесено в класс Bomb
         flag.start();
         gameState = GameState.PLAYED;
     }
@@ -65,7 +65,7 @@ public class Game {
     }
 
     private void checkWinner() {
-        if (GameState.PLAYED == gameState) { // если состояние игры - играет _ т.е. не проиграл и не выйграл
+        if (GameState.PLAYED == gameState) { // если состояние игры - играет _ т.е. не проиграл и не выиграл
             // если кол-во закрытых бомб равно кол-ву бомб в игре
             if (flag.getTotalClosedBoxes() == bomb.getTotalBombs()) {
                 gameState = GameState.WINNER;
@@ -92,7 +92,7 @@ public class Game {
                     case BOMB:
                         openBombs(coordinate);
                         break;
-                    // вместо пречислений Num1-Num8
+                    // вместо перечислений Num1-Num8
                     default:
                         flag.setOpenedToBox(coordinate);
                         break;
@@ -102,7 +102,7 @@ public class Game {
     }
 
     private void setOpenedToClosedBoxesAroundNumber(Coordinate coordinate) {
-        if (Box.BOMB != bomb.getBox(coordinate)) { // проверка есть в самом enum в мтеоде getNumber()
+        if (Box.BOMB != bomb.getBox(coordinate)) { // проверка есть в самом enum в методе getNumber()
             if (bomb.getBox(coordinate).getNumber() == flag.getCountOfFlaggedBoxesAround(coordinate)) {
                 for (Coordinate around : Ranges.getCoordinatesAround(coordinate)) {
                     if (Box.CLOSED == flag.getBox(around))
@@ -112,7 +112,7 @@ public class Game {
         }
     }
 
-    private void openBombs(Coordinate bombedCoordinate) { // координата на которо1 мы подорвались
+    private void openBombs(Coordinate bombedCoordinate) { // координата на котором мы подорвались
         flag.setBombedToBox(bombedCoordinate);
         // при проигрыше надо пооткрывать все неоткрытые бомбы
         for (Coordinate coordinate : Ranges.getAllCoordinates())
