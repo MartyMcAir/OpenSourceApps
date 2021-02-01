@@ -1,6 +1,6 @@
 "CalRem" Чудо напоминалка ( from https://github.com/VladTima/CalRem)
 
-![](https://github.com/MartyMcAir/-WebApps-Experimental-/blob/master/WebAppByServlets/web/WEB-INF/img/MainPage.png)
+![](https://github.com/MartyMcAir/OpenSourceApps/blob/master/ReminderCalendarClock_CalRem/notes/z_reminder.jpg)
 
 УСТАНОВКА
 - выложите папку CalRem со всем содержимым в любую выбраную директорию
